@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<style>
+    .exteriores{
+        background-color: aliceblue;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    
+    <!--Alinear: por bloque-->
+    <div class="container-fluid">     
+        <div class="row align-items-end exteriores">
+            <div class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+            <div class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+    </div>
+
+    <!--Alinear:  individualmente-->
+    <div class="container-fluid">  
+        <div class="row exteriores" >
+            <div class="col align-self-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+            <div class="col align-self-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+            <div class="col align-self-end">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>    
+    </div>
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

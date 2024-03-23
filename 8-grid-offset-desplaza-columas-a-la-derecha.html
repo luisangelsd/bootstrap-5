@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<style>
+    .row{
+    background-color: rgb(108, 157, 199);
+    margin-bottom: 10px;
+    }
+
+    .contenido{
+    background-color: rgb(108, 199, 110);
+    border: 1px solid;
+    margin-bottom: 10px;
+    }
+</style>
+<body>
+    <!-- Nos sirve para desplazar una columa a la derecha, puedes la adaptabilidad a dispo
+        sitivos moviles   -->
+
+    <!--Forma Normal -->    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 offset-3 contenido"> Columna 1 </div>
+            <div class="col-3  contenido"> Columna 2 </div>
+            <div class="col-3  contenido"> Columna 3 </div>
+        </div>
+    </div>
+    <!--Adaptado de Dispositivos Moviles-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 offset-ms-0 offset-lg-3  contenido"> Columna 1 </div>
+            <div class="col-3  contenido"> Columna 2 </div>
+            <div class="col-3  contenido"> Columna 3 </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

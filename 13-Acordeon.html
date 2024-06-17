@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!--
+       mt-4 : Coloca un margen parte de arriba
+       accordion: Indica que vamos a crear un contenedor
+       accordion-flush: Indica que al contenedor le quitaremos los bordes redondeados
+       accordion-item: Indicamos que es un Item dentro del acordeon
+       accordion-header: Indicamos el titulo del Item
+       accordion-button: modifica el boton, para que no lo pareszca y se estire
+       type="button": Va a tener accion de botton al dar clic
+       data-bs-toggle: Al dar clic colapsara el contenido debajo
+       data-bs-target="#elemento-1" : Le indicamos el id del elemento a collapsar
+       aria-expanded="true" aria-contrles="elemento1" (Opcional para dispositivos personas ciegas)
+        
+       acordion-collapse collapse hidden: Decimos que el Item estara oculto o activo: cambiando hidden y show
+       data-bs-parent="acordeon": El indicamos el contenedor padre
+       accordion-body: Indicamos el div que contendra el cuerpo de un Item
+       >
+    -->
+                <div class="accordion accordion-flush" id="acordeon">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="encabezado-1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#elemento-1"> Encabezado #1 </button>             
+                        </h2>
+                        <div class="acordion-collapse collapse show" data-bs-parent="acordeon" id="elemento-1">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, distinctio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="encabezado-2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#elemento-2"> Encabezado #1 </button>             
+                        </h2>
+                        <div class="acordion-collapse collapse hidden" data-bs-parent="acordeon" id="elemento-2">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, distinctio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

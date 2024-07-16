@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="col-12">
+      <!--
+        Nos permite crear un boton con una lista desplegable
+        dropdown-toggle : Agrega flechita
+         -->
+      <div class="dropdown">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" id="dropdown-1">
+          Configuraciones
+        </button>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdown-1">
+          <li><a href="#" class="dropdown-item">Item</a></li>
+          <li><a href="#" class="dropdown-item">Item</a></li>
+        </ul>
+      </div>
+
+      <!--
+            Nos permite crear un enlace con una lista desplegable
+            dropdown-toggle : Agrega flechita
+             -->
+      <div class="dropdown">
+        <a type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" id="dropdown-1">
+          Configuraciones
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdown-2">
+          <li><a href="#" class="dropdown-item">Item</a></li>
+          <li><a href="#" class="dropdown-item">Item</a></li>
+        </ul>
+        <div>
+        </div>
+      </div> <!--col-->
+
+      <hr>
+      <h2>Agrupamiento</h2>
+      <div class="col-12">
+        <!--Es lo mismo de arriba pero ahora estan encerrados en btn-group, que simula una barra herramientas-->
+        <div class="btn-group">
+          <div class="dropdown">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" id="dropdown-1">
+              Configuraciones
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdown-1">
+              <li><a href="#" class="dropdown-item">Item</a></li>
+              <li><a href="#" class="dropdown-item">Item</a></li>
+            </ul>
+          </div>
+          <!---->
+          <div class="dropdown">
+            <a type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" id="dropdown-1">
+              Configuraciones
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdown-2">
+              <li><a href="#" class="dropdown-item">Item</a></li>
+              <li><a href="#" class="dropdown-item">Item</a></li>
+            </ul>
+            <div>
+            </div>
+          </div>
+        </div> <!--col-->
+
+        <hr>
+        <h2>Horientacion</h2>
+        <div class="col">
+
+          <!-- Colocamos la orientación hacia arriba, cambiando a "abajo": Ten cuidado porque algunas propiedades conservan el "dropdown" -->
+          <div class="dropdown">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" id="dropdown-1">
+              Configuraciones Abajo
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdown-1">
+              <li><a href="#" class="dropdown-item">Item</a></li>
+              <li><a href="#" class="dropdown-item">Item</a></li>
+            </ul>
+          </div>
+
+
+          <!-- Colocamos la orientación hacia arriba, cambiando a "arriba": Ten cuidado porque algunas propiedades conservan el "dropdown" -->
+          <div class="dropup">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" id="dropup-1">
+              Configuraciones Arriba
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropup-1">
+              <li><a href="#" class="dropdown-item">Item</a></li>
+              <li><a href="#" class="dropdown-item">Item</a></li>
+            </ul>
+          </div>
+        </div><!--Col-->
+      <!-- A pesar de que le colocamos a la "izquierda", pero al no caber se mueve a la derecha -->
+        <!-- Colocamos la orientación hacia arriba, cambiando a "izquierda: Ten cuidado porque algunas propiedades conservan el "dropdown"" -->
+        <div class="dropstart">
+          <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" id="dropstart-1">
+            Configuraciones Izquierda
+          </button>
+
+          <ul class="dropdown-menu" aria-labelledby="dropstart-1">
+            <li><a href="#" class="dropdown-item">Item</a></li>
+            <li><a href="#" class="dropdown-item">Item</a></li>
+          </ul>
+        </div>
+      </div><!--Col-->
+
+      <!-- Colocamos la orientación hacia arriba, cambiando a "derecha": Ten cuidado porque algunas propiedades conservan el "dropdown" -->
+      <div class="dropend">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" id="dropend-1">
+          Configuraciones Derecha
+        </button>
+
+        <ul class="dropdown-menu" aria-labelledby="dropend-1">
+          <li><a href="#" class="dropdown-item">Item</a></li>
+          <li><a href="#" class="dropdown-item">Item</a></li>
+        </ul>
+      </div>
+    </div><!--Col-->
+
+    <hr>
+    <h2>Con Divisores en el munu desplegable</h2>
+    <div class="col">
+      <div class="dropend">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" id="dropend-1">
+          Configuraciones Derecha
+        </button>
+
+        <ul class="dropdown-menu" aria-labelledby="dropend-1">
+          <li><a href="#" class="dropdown-item">Item</a></li>
+          <li><hr class="dropdown-divider"> </li> <!--Aqui esta el divisor-->
+          <li><a href="#" class="dropdown-item">Item</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div> <!--row-->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

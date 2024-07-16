@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+   
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!--Grupo Botones: Nos permite guntar botones deforma agrupada-->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success"> Success</button>
+                    <button type="button" class="btn btn-warning"> Warning</button>
+                    <button type="button" class="btn btn-danger"> Danger</button>
+                    <button type="button" class="btn btn-primary"> Primary</button>
+                </div>
+                <hr>
+            </div>
+
+            <div class="col-12">
+                <!--Grupo Botones: Nos permite guntar botones deforma agrupada,
+                igualment con "active" podemos marcar como si una opcion estuviera 
+                marcada por defecto
+                -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary active"> Primary</button>
+                    <button type="button" class="btn btn-primary"> Primary</button>
+                    <button type="button" class="btn btn-primary"> Primary</button>
+                    <button type="button" class="btn btn-primary"> Primary</button>
+                </div>
+            </div>    
+
+            <div class="col-12">    
+                <hr>
+                <!--Grupo Botones: Lo mismo dearriba solamente que colocamos caracteristicas al
+                grupo de botones y estas se aplican a todos los botones por defecto, como por ejemplo
+                "btn-group-ms" aplica un tamaño pequelo a todo el grupo 
+                -->
+                <div class="btn-group btn-group-lg">
+                    <button type="button" class="btn btn-primary active"> Primary</button>
+                    <button type="button" class="btn btn-primary"> Primary</button>
+                    <button type="button" class="btn btn-primary"> Primary</button>
+                    <button type="button" class="btn btn-primary"> Primary</button>
+                </div>
+            </div> 
+            
+            <div class="col-12">
+                <hr>
+                <!--Nos permite crear un grupo de botones en donde podemos ver que boton estaactivo
+                -->
+                <div class="btn-group">
+                    <input type="radio" name="radio" id="radio-1" class="btn-check">
+                    <label for="radio-1" class="btn btn-primary"> Radio 1</label>
+
+                    <input type="radio" name="radio" id="radio-2" class="btn-check">
+                    <label for="radio-2" class="btn btn-primary"> Radio 2</label>
+
+                    <input type="radio" name="radio" id="radio-3" class="btn-check">
+                    <label for="radio-3" class="btn btn-primary"> Radio 3</label>
+                </div>
+            </div>
+
+
+            <div class="col-12">
+                <hr>
+                <!--Nos permite crear un grupo de botones en donde podemos ver que boton estaactivo
+                ordenandolos de forma vertical con la clase "btn-group-vertica" directamente en el gruop
+                -->
+                <div class="btn-group-vertical">
+                    <input type="radio" name="radio" id="radio-4" class="btn-check">
+                    <label for="radio-4" class="btn btn-primary"> Radio 1</label>
+
+                    <input type="radio" name="radio" id="radio-5" class="btn-check">
+                    <label for="radio-5" class="btn btn-primary"> Radio 2</label>
+
+                    <input type="radio" name="radio" id="radio-6" class="btn-check">
+                    <label for="radio-6" class="btn btn-primary"> Radio 3</label>
+                </div>
+            </div>
+
+        </div>     
+   </div>
+   
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

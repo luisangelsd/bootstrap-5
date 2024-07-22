@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <!------------------------------------------------>
+            <!--Estructura -->
+            <h3>Estructura</h3>
+            <div class="col-6">
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-text">@gmail.com</span>
+                    </div>
+                </form>
+            </div>
+            <!------------------------------------------------>
+            <!-- Con varios -->
+            <h3>Varios</h3>
+            <div class="col-6">
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-text">Nombre</span>
+                        <input type="text" class="form-control">
+
+                        <span class="input-group-text">Apellido</span>
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <!------------------------------------------------>
+            <!-- Tamaños -->
+            <h3>Tamaño</h3>
+            <div class="col-6">
+                <form>
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text">Nombre</span>
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <!------------------------------------------------>
+            <!-- Select -->
+            <h3>Select</h3>
+            <div class="col-6">
+                <form>
+                    <div class="input-group">
+                        <label for="select-1" class="input-group-text">Pais</label>
+                        <select class="form-control">
+                            <option value="mexico">Mexico</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <!------------------------------------------------>
+            <!-- Select + Boton -->
+            <h3>Select +  Boton</h3>
+            <div class="col-6">
+                <form>
+                    <div class="input-group">
+                        <label for="select-1" class="input-group-text">Pais</label>
+                        <select class="form-control">
+                            <option value="mexico">Mexico</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                        <button class="btn btn-warning">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
